@@ -22,7 +22,7 @@ O método `reduceByKey()` é mais eficiente que `groupByKey()` para grandes data
 
 __Explique o que o código Scala abaixo faz.__
 
-```scala
+```
 val​ textFile = sc.textFile("hdfs://...")
 val counts = textFile.flatMap(line => line.split(""))
         .map​(word => (word​, 1))
